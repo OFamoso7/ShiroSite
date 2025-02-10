@@ -1,3 +1,24 @@
-body{
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
     background-color: rgb(171, 225, 110);
+}
+
+ul, li {
+    display: flex;
+    padding: 20px;
+}
+
+.botao {
+    display: inline-block;
+    padding: auto;
+    font-size: 16px;
+    color: white;
+    background-color: #d5638a;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
 }
