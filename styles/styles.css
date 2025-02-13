@@ -11,6 +11,7 @@ body {
 header {
     background: white;
     padding: 15px 0;
+    border-radius: 100px;
 }
 
 nav {
@@ -64,7 +65,7 @@ nav ul li a.active {
 
 /* Logo */
 .logo {
-    max-width: 360px;
+    max-width: 500px;
     position: center;
     z-index: 2;
 }
@@ -118,3 +119,29 @@ h2 {
     display: block;
     margin-top: 20px;
 }
+
+/* CARROSSEL */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    display: inline-block;
+    animation: slide 20s linear infinite;
+}
+
+.carousel-item {
+    display: inline-block;
+    padding: 20px;
+    font-size: 45px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+/* FIM CARROSSEL*/
