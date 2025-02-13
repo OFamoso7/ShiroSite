@@ -1,3 +1,9 @@
+/* Fontes */
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
 /* Configurações gerais */
 body {
     font-family: Arial, sans-serif;
@@ -127,6 +133,7 @@ h2 {
     white-space: nowrap;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
 }
 
 .carousel-inner {
@@ -136,8 +143,13 @@ h2 {
 
 .carousel-item {
     display: inline-block;
-    padding: 20px;
-    font-size: 45px;
+    padding: 7px;
+    font-size: 30px;
+}
+
+.carousel-img {
+    display: inline-block;
+    padding: 7px;
 }
 
 @keyframes slide {
