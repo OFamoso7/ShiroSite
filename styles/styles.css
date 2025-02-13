@@ -2,6 +2,8 @@
 @font-face {
     font-family: 'Poppins';
     src: url(../fonts/Poppins-SemiBold.ttf) format('truetype');
+    font-family: 'Sage';
+    src: url(../fonts/Sage\ Grotesk.otf) format('truetype');
 }
 
 /* Configurações gerais */
@@ -157,3 +159,25 @@ h2 {
     100% { transform: translateX(-50%); }
 }
 /* FIM CARROSSEL*/
+
+/* Parte rosa, meio do site*/
+.midsite {
+    font-family: 'Sage', sans-serif;
+    text-align: center;
+    background: #e46592;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.titulo-mid {
+    font-size: 30px;
+    color: white;
+}
+
+.sub-titulo {
+    font-size: 19px;
+    color: white;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
