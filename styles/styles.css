@@ -1,24 +1,120 @@
-body, html {
-    height: 100%;
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: grid;
-    place-items: center;
-    background-color: rgb(171, 225, 110);
+    background: #ABE16E; /* Verde */
+    overflow-x: hidden;
 }
 
-ul, li {
+/* Estilização do cabeçalho */
+header {
+    background: white;
+    padding: 15px 0;
+}
+
+nav {
     display: flex;
-    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
 }
 
-.botao {
-    display: inline-block;
-    padding: auto;
-    font-size: 16px;
-    color: white;
-    background-color: #d5638a;
-    text-align: center;
+/* Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a {
     text-decoration: none;
-    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Botão de cotação */
+.btn-cta {
+    background: #E46592;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Seção principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative;
+    height: 500px;
+}
+
+/* Logo */
+.logo {
+    max-width: 360px;
+    position: center;
+    z-index: 2;
+}
+
+/* Triângulo rosa */
+.triangle {
+    background: #E46592;
+    position: absolute;
+    right: 2;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+
+/* Bloco de conteúdo no triângulo */
+.content {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    z-index: 3;
+}
+
+/* Texto dentro do bloco rosa */
+h2 {
+    color: black;
+    font-size: 36px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+.highlight {
+    color: #ABE16E;
+    font-weight: bold;
+}
+
+/* Botão "quero conhecer" */
+.btn-know {
+    background: white;
+    color: #E46592;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
 }
