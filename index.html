@@ -1,49 +1,36 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/styles.css" rel="stylesheet">
-    <title>Shiro Agencia</title>
+    <title>Shiro Agência</title>
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 <body>
     <header>
-        <div id="title">
-            <h1>Agencia</h1>
-            <h1>Shiro</h1>
-
-        </div>
-<!--barra de navegação, na parte cima-->
-        <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Serviços</li></a>
-            <a href="#"><li>Contato</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Portifólio</li></a>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Portfólio</a></li>
+            </ul>
+            <button class="btn-cta">solicitar cotação</button>
+        </nav>
     </header>
 
-    <main>
-        <aside>
-            <h2>Torne suas ideias realidade!</h2>
-            <h2>Faça um orçamento!</h2>
-            <p>
-                <!--texto exemplo, colocar uma introdução boa-->
-                Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto modelo padrão da indústria desde os anos 1500
-            </p>
-            <form>
-                <!--=caixas para o cliente colocar informações pra orçamento rápido-->
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="text" placeholder="Descrição">
-                <button onclick="alert('Entraremos em contato em breve.')" class="botao" value="Solicitar orçamento">Solicite um orçamento</button>
-            </form>
-        </aside>
-
-        <article>
-            <img src="./components/images/Logo-Shiro-Colorido (1).png" width="600px" height="auto" alt="logo-unica-colorido">
-        </article>
+    <main class="container">
+        <div class="triangle"></div>
+        <div class="left-section">
+            <img src="components/images/Logo-Shiro-Colorido (1).png" alt="Shiro Agência" class="logo">
+        </div>
+        <div class="right-section">
+            <h2><span class="highlight">RE</span>CONSTRUA</h2>
+            <p>sua marca com<br> tecnologia <br> design & <br> estratégia</p>
+            <button class="btn-know">quero conhecer</button>
+        </div>
     </main>
-    
 </body>
+</html>
+
 </html>
