@@ -1,24 +1,26 @@
-/* Fontes */
 @font-face {
     font-family: 'Poppins';
     src: url(../fonts/Poppins-SemiBold.ttf) format('truetype');
     font-family: 'Sage';
     src: url(../fonts/Sage\ Grotesk.otf) format('truetype');
 }
-
-/* Configurações gerais */
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background: #ABE16E; /* Verde */
-    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Estilização do cabeçalho */
+/* Configuração do body */
+body {
+    background-color: #b2e675;
+}
+
+/* Navbar */
 header {
-    background: white;
-    padding: 15px 0;
+    background-color: white;
+    padding: 10px;
     border-radius: 100px;
 }
 
@@ -28,106 +30,152 @@ nav {
     align-items: center;
     max-width: 1100px;
     margin: auto;
-    padding: 0 20px;
 }
 
-/* Menu */
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    padding: 0;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 16px;
 }
 
-nav ul li a.active {
-    text-decoration: underline;
-}
-
-/* Botão de cotação */
-.btn-cta {
-    background: #E46592;
+.btn-cotacao {
+    background-color: #e675a4;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
     cursor: pointer;
 }
 
-/* Seção principal */
-.container {
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-color: #b2e675;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
-    position: relative;
-    height: 500px;
+    padding: 0 15%;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Triângulo Rosa */
+.triangle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #e675a4;
+    clip-path: polygon(100% 0, 50% 50%, 100% 100%);
+    z-index: 1;
 }
 
 /* Logo */
 .logo {
-    max-width: 500px;
-    position: center;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
-/* Triângulo rosa */
-.triangle {
-    background: #E46592;
-    position: absolute;
-    right: 2;
-    top: 0;
-    width: 55%;
-    height: 100%;
-    clip-path: polygon(100% 0, 100% 100%, 0% 100%);
-    z-index: 1;
+
+.logo img {
+    width: 600px;
+    
 }
 
-/* Bloco de conteúdo no triângulo */
+/* Conteúdo */
+/* Ajuste do Texto */
 .content {
     position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    text-align: left;
+    left: 65%; /* Move o texto para dentro do triângulo */
+    top: 50%; /* Ajusta verticalmente */
+    transform: translate(-50%, -50%);
     z-index: 3;
+    text-align: left;
+    color: white;
+    width: 30%; /* Limita a largura do texto */
 }
 
-/* Texto dentro do bloco rosa */
-h2 {
-    color: black;
-    font-size: 36px;
-    margin-bottom: 10px;
+/* Ajuste do Texto */
+.content {
     position: absolute;
+    left: 70%; /* Movendo mais para a direita */
+    top: 50%; /* Ajusta verticalmente */
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: left;
+    color: white;
+    width: 30%; /* Limita a largura do texto */
 }
 
-.highlight {
-    color: #ABE16E;
+/* Ajuste do Texto */
+.content {
+    position: absolute;
+    left: 75%; /* Movendo mais para a direita */
+    top: 50%; /* Ajusta verticalmente */
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: left;
+    color: white;
+    width: 30%; /* Limita a largura do texto */
+}
+
+/* Ajuste do Texto */
+.content {
+    position: absolute;
+    left: 85%; /* Movendo ainda mais para a direita */
+    top: 50%; /* Centralizando verticalmente */
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: left;
+    color: white;
+    width: 30%; /* Mantendo a largura do texto */
+}
+
+/* Ajuste do título */
+.content h1 {
+    font-size: 2.5rem;
     font-weight: bold;
+    color: black;
 }
 
-/* Botão "quero conhecer" */
-.btn-know {
-    background: white;
-    color: #E46592;
+/* Estilo especial para "RE" */
+.content h1 .re {
+    color: #B2E672; /* Verde claro igual ao fundo */
+}
+
+/* Parágrafos dentro do triângulo */
+.content p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Botão "Quero Conhecer" */
+.btn-conhecer {
+    background-color: #e675a4;
+    color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 15px 40px;
     border-radius: 30px;
     cursor: pointer;
-    display: block;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
-
 /* CARROSSEL */
 .carousel {
     width: 100%;
@@ -135,31 +183,20 @@ h2 {
     white-space: nowrap;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Poppins', sans-serif;
 }
-
 .carousel-inner {
     display: inline-block;
     animation: slide 20s linear infinite;
 }
-
 .carousel-item {
     display: inline-block;
-    padding: 7px;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 45px;
 }
-
-.carousel-img {
-    display: inline-block;
-    padding: 7px;
-}
-
 @keyframes slide {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
-/* FIM CARROSSEL*/
-
 /* Parte rosa, meio do site*/
 .midsite {
     font-family: 'Sage', sans-serif;
@@ -168,12 +205,10 @@ h2 {
     width: 100%;
     padding: 15px 0;
 }
-
 .titulo-mid {
     font-size: 30px;
     color: white;
 }
-
 .sub-titulo {
     font-size: 19px;
     color: white;
@@ -181,3 +216,5 @@ h2 {
     padding-right: 300px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
